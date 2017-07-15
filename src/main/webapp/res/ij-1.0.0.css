@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: Arial;
+	font-size: 14px;
+	color: #333333;
+}
+/*13ij询问框部分*/
+.ij-prompt{
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0);
+}
+.ij-prompt .ij-pro-con{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 300px;
+	height: 150px;
+	background: rgba(255,255,255,1);
+	box-shadow: 1px 1px 10px #CCC;
+	border-radius: 5px;
+}
+.ij-prompt .ij-pro-top{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-family: "微软雅黑";
+    font-size: 14px;
+}
+.ij-prompt .ij-pro-text{
+	height: 60px;
+	overflow: hidden;
+    display: -webkit-box;
+    word-break: break-word;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    padding: 0 0.5rem;
+    text-indent: 2rem;
+}
+.ij-prompt .ij-pro-text input{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+.ij-prompt .ij-pro-btn{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	position: relative;
+}
+.ij-prompt .ij-pro-btn .pro-sure{
+	display: inline-block;
+	height: 100%;
+	width: 50%;
+	float: left;
+	font-family: "微软雅黑";
+    font-size: 14px;
+}
+.ij-prompt .ij-pro-btn .pro-cancel{
+	display: inline-block;
+	height: 100%;
+	width: 50%;
+	float: left;
+	font-family: "微软雅黑";
+    font-size: 14px;
+}
+
+/*提示框*/
+.ij-prompt .ij-pro-tip{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 300px;
+    height: 60px;
+	background: rgba(255,255,255,0);
+	border-radius: 5px;
+    padding: 0 0.5rem;
+    text-align: center;
+}
+.ij-prompt .ij-pro-tip .tip-span{
+	text-align: center;
+	font-family: "微软雅黑";
+    font-size: 14px;
+    line-height: 25px;
+    overflow: hidden;
+    display: -webkit-box;
+    word-break: break-word;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    background: rgba(255,255,255,1);
+	box-shadow: 1px 1px 10px #CCC;
+	border-radius: 5px;
+    padding: 0.5rem;
+}
+
+/*行分页*/
+.ij-page-ul{
+	position: relative;
+	background: white;
+}
+.ij-page-ul .ij-page-li{
+	position: relative;
+}
+.ij-page-ul .ij-page-li[page='0']{
+	display: none;
+}
+
+/*置顶按钮*/
+.ij-top{
+	position: fixed;
+	z-index: 1;
+	height: 40px;
+	width: 40px;
+	border-radius: 100%;
+	border: 3px solid rgba(255,255,255,.5);
+	box-shadow: 1px 1px 10px #CCCCCC;
+	background: rgba(0,0,0,.5);
+	bottom: 80px;
+	right: 10px;
+}
+.ij-top > span{
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	border-left: 2px solid #CCCCCC;
+	border-top: 2px solid #CCCCCC;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	transform: rotate(45deg);
+}
+.ij-top > span > span{
+	display: inline-block;
+	height: 2px;
+	width: 100%;
+	background: #CCCCCC;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	transform: rotate(45deg);
+}
+
+/*到底提示*/
+.ij-no-more{
+	position: relative;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
